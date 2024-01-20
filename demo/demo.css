@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-bar {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    padding: 5px;
+}
+
+.search-container:hover .search-bar {
+    display: block;
+}
+
+.search-bar input:focus {
+    display: block;
+}

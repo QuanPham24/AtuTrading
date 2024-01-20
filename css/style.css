@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General CSS */
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* HEADER */
+/* Top-navigation bar */
+.top-bg{
+    background-color: #fcb900;
+    padding: 11px 0;
+}
+.top-nav{
+    display:flex;
+    justify-content: end;
+    gap:30px;
+}
+.sub-contact{
+    position: relative;
+}
+.sub-contact ul{
+    display:flex;
+    gap: 15px;
+}
+
+.sub-contact ul li a, .search a{
+    color:#999999;
+}
+.sub-contact::after{
+    content:"";
+    height: 100%;
+    border-right:1px solid gray;
+    position: absolute;
+    top: 0;
+    right: -7px;
+}
+
+.searchBox{
+    position: relative;
+}
+.searchBox input{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 3;
+    background: none;
+    outline: none;
+    border: none;
+    color:white;
+    width: 0px;
+    transition: all 2s;
+}
+
+.searchBox:hover input{
+    width: 200px;
+}
+
+.searchBox input:focus{
+    width: 200px;
+}
+
+.searchBox button{
+    background-color:transparent;
+    border:none;
+}
+
+/* Bottom Nav */
+.bottom-bg{
+    background-color:#222222;
+    /* color:white; */
+    padding: 11px;
+}
+.bottom-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-nav img{
+    width: 140px;
+    height: 66px;
+}
+.bottom-nav nav ul{
+    display:flex;
+    gap: 30px;
+}
+.bottom-nav nav ul li a{
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* Carrousal */
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Intro */
+.content{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.left-intro .title{
+    text-align: center;
+    color:#003366;
+}
+.left-intro p{
+    text-align: center;
+}
+
+.left-intro li i{
+    font-size: 24px;
+}
+.left-intro li span{
+    display: inline-block;
+    padding: 0 0 20px 20px;
+}
+
+.left-intro button{
+    background-color:#fcb900;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-weight: bold;
+    border:none;
+}
+
+.right-intro video{
+    width: 200;
+    height: 200;
+}
+
